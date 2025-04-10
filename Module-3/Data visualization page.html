@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>London City Data Dashboard</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>London City Data Visualization Dashboard</h1>
+            <div class="metrics">
+                <div class="metric">
+                    <span class="label">Total Population</span>
+                    <span class="value">9.748M</span>
+                </div>
+                <div class="metric">
+                    <span class="label">Employment Rate</span>
+                    <span class="value">1.04%</span>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="left-panel">
+                <div class="chart-container">
+                    <div id="barChart3D" class="chart"></div>
+                </div>
+                <div class="chart-container">
+                    <div id="barChart" class="chart"></div>
+                </div>
+            </div>
+            <div class="center-panel">
+                <div class="chart-container">
+                    <div id="map" class="map"></div>
+                </div>
+            </div>
+            <div class="right-panel">
+                <div class="chart-container">
+                    <div id="populationChart" class="chart"></div>
+                </div>
+                <div class="chart-container">
+                    <div id="areaChart" class="chart"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
